@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha|Open+Sans');
+/*font-family: 'Neucha', cursive;
+font-family: 'Open Sans', sans-serif;*/
+
+
+body{
+    background: url(../images/body_bg.jpg) no-repeat fixed center top; 
+}
+/************HEADER STYLE*****************/
+#main-wrapper{
+    margin-top: 20px;
+}
+.logo {
+    position: absolute;
+    z-index: 1;
+    margin-left: 2%;
+    margin-top: 5px;
+}
+
+.row-down {
+    top: 44px;
+    position: relative;
+}
+
+/************NAVIGATION STYLE*****************/
+.header-part{
+    
+}
+.navbar-nav{
+    margin-right: 110px;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: #FF9600!important;
+    height: 40px;
+}
+.nav-link{
+    font-family: 'Neucha', cursive;
+    color: #fff!important;
+    font-size: 20px;
+    margin:0 3px ;
+    font-weight: 700;
+}
+.nav-link:hover{
+    color: #CB3611!important;
+}
+
+.local-curry {
+    position: absolute;
+    line-height: 60px;
+}
+.local-curry p{
+    color: #fff;
+    font-size: 16px;
+}
+.local-curry em{
+    color: #CB3611;
+}
+.open{
+    margin-left: 320px;
+    margin-top: 4px;
+    
+}
+.open-status {
+    background: #51A351;
+    padding: 2px 30px;
+    color: #fff!important;
+    border-radius: 0;
+    position: absolute;
+    right: 0px;
+    font-size: 25px;
+    font-family: "Open Sans", SANS-SERIF;
+}
+
+/************FOOTER TOP STYLE*****************/
+
+.footer-top{
+    background: url(../images/middlebg.jpg) no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    font-family:'Neucha', cursive;
+    text-align: center;
+    
+}
+.top-border{
+    background: url(../images/toptrim.png) repeat-x;
+    min-height: 18px;
+}
+.bottom-border{
+    background: url(../images/bottomtrim.png) repeat-x;
+    min-height: 15px;
+}
+.online-order h1,.online-order p,.welcome-message h1,.welcome-message p {
+    color: #fff;
+    
+}
+.footer-left-btn{
+    color: #fff;
+    background: #000;
+}
+.footer-left-btn["placeholder"]{
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+.welcome-message p{
+    font-family: 'Open Sans', sans-serif;
+}
+a.btn-order {
+    background: #51A351;
+    border-color: #51A351;
+    padding: 6px 26px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+a.btn-order:hover{
+    background: #56AC56;
+}
+
+.footer-bottom{
+    background: #343434;
+    text-align: center;
+    margin-top: 0;
+    padding: 20px 0;
+}
+.footer-bottom p{
+    margin-bottom: 5px;
+    color: #fff;
+}
+.footer-bottom a{
+    color: #fff;
+}
+.footer-bottom img{
+    margin-bottom: 10px;
+}
+
+.bottom-bg{
+    min-height: 60px;
+    background: #202020;
+}
+
+
+/************Members Page**************/
+.register{
+    margin-top: 120px;
+    margin-bottom: 70px;
+}
+.registration-form{
+    
+    background: #FF9600;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+.right-col{
+    background: #FF9600;
+}
+
+
+
+
+/************Delivery Page****************/
+.delivery{
+    margin-top: 80px;
+}
+.food-menu{
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    .logo {
+    position: unset!important;
+    z-index: unset!important;
+    margin-left: 0!important;
+    }
+    .right-address {
+    top: 0px!important;
+    right: 0!important;
+    width: 100%!important;
+    }
+    .open-status {
+    right: 85px!important;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+    .logo {
+    position: unset!important;
+    z-index: unset!important;
+    margin-left: 0!important;
+    }
+    .right-address {
+    top: 0px!important;
+    right: 0!important;
+    width: 100%!important;
+    }
+    .open-status {
+    right: 85px!important;
+    }
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) { 
+    .logo {
+    position: unset!important;
+    z-index: unset!important;
+    margin-left: 0!important;
+    }
+    .right-address {
+    top: 0px!important;
+    right: 0!important;
+    width: 100%!important;
+    }
+    .open-status {
+    right: 85px!important;
+    }
+}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) { ... }
