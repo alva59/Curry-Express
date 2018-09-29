@@ -1,14 +1,53 @@
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
-    
+    .logo {
+    position: unset!important;
+    z-index: -1 !important;
+    margin-left: 0!important;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+        height: 56px;
+    }
+    .right-address {
+    top: 0px!important;
+    right: 0!important;
+    width: 100%!important;
+    }
+    .open-status {
+    right: 85px!important;
+    background: #51A351;
+    padding: 9px 30px;
+    color: #fff!important;
+    border-radius: 0;
+    position: absolute;
+    right: -16px;
+    font-size: 25px;
+    font-family: "Open Sans", SANS-SERIF;
+    margin-top: 0px;
+}
+    .local-curry{
+        display: none;
+    }
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
 /* Styles */
-    .logo{
-        position: inherit!important;
-        
+    .logo {
+    position: unset!important;
+    z-index: -1 !important;
+    margin-left: 0!important;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+        height: 56px;
+    }
+    .right-address {
+    top: 0px!important;
+    right: 0!important;
+    width: 100%!important;
+    }
+    .open-status {
+    right: 85px!important;
     }
     .local-curry{
         display: none;

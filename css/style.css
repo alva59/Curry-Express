@@ -1,6 +1,62 @@
 @import url('https://fonts.googleapis.com/css?family=Neucha|Open+Sans');
 /*font-family: 'Neucha', cursive;
 font-family: 'Open Sans', sans-serif;*/
+@media (max-width: 576px) {
+    .logo {
+    position: unset!important;
+    z-index: -1 !important;
+    margin-left: 0!important;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+        height: 56px;
+    }
+    nav{
+        z-index: 1;
+    }
+    
+    .open-status {
+    right: 85px!important;
+    }
+    .open-status {
+    background: #51A351;
+    padding: 4px 30px;
+    color: #fff!important;
+    border-radius: 0;
+    position: absolute;
+    right: -16px;
+    font-size: 25px;
+    font-family: "Open Sans", SANS-SERIF;
+        margin-top: 0;
+}
+    .local-curry{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+/* Styles */
+    .open-status {
+    background: #51A351;
+    padding: 1px 30px;
+    color: #fff!important;
+    border-radius: 0;
+    position: absolute;
+    right: 80px;
+    font-size: 25px;
+    font-family: "Open Sans", SANS-SERIF;
+    margin-top: 0px;
+}
+    .local-curry{
+        display: none!important;
+        line-height: 0;
+    }
+}
+div#navbarToggleExternalContent {
+    width: 100%;
+    background: #ff9600;
+    margin-top: -8px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
 
 
 body{
@@ -40,6 +96,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
     margin:0 3px ;
     font-weight: 700;
 }
+.navbar-toggler{
+    margin-bottom: 16px;
+}
+.navbar-toggler.collapsed{
+    margin-bottom: 0px;
+}
 .nav-link:hover{
     color: #CB3611!important;
 }
@@ -55,24 +117,23 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light {
 .local-curry em{
     color: #CB3611;
 }
-.open{
-    margin-left: 320px;
-    margin-top: 4px;
-    
-}
+
 .open-status {
     background: #51A351;
-    padding: 2px 30px;
+    padding: 4px 30px;
     color: #fff!important;
     border-radius: 0;
     position: absolute;
-    right: 0px;
+    right: -16px;
     font-size: 25px;
     font-family: "Open Sans", SANS-SERIF;
+    margin-top: -4px;
 }
-
 /************FOOTER TOP STYLE*****************/
-
+img.vendor-logo {
+    width: 150px;
+    height: 60px;
+}
 .footer-top{
     background: url(../images/middlebg.jpg) no-repeat;
     background-size: cover;
@@ -151,10 +212,20 @@ a.btn-order:hover{
     border: 1px solid #fff;
     padding: 10px;
 }
-.right-col{
-    background: #FF9600;
+.sign-in-area{
+    background: #ff9600;
+    padding: 20px;
+    margin-bottom: 30px;
 }
-
+.sign-in-area h1, .sign-in-area label{
+    color:#fff;
+}
+a.btn.sign-btn {
+    color: #fff;
+    background: #2D2D2D;
+    border-radius: none!important;
+    padding: 6px 20px;
+}
 
 
 
@@ -164,14 +235,76 @@ a.btn-order:hover{
 }
 .food-menu{
     background: #fff;
+    padding: 20px 0;
 }
+.food-category{
+    background: #CCCCCC;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.food-category li{
+    background: #EAEAEA;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 3px;
+    text-align: center;
+    font-family: 'Neucha', cursive;
+}
+.food-category li a{
+    color: #404040;
+    font-size: 20px;
+}
+.food-category li:hover{
+    text-decoration: none;
+    background: #fff;
+
+}
+.food-category li a{
+    text-decoration: none;
+}
+.delivery-head {
+    background: #DFF0D8;
+    padding: 5px;
+    font-family: 'Neucha', sans-serif;
+}
+.add{
+    margin-right: 5px;
+}
+.delivery-img{
+    margin-top: 30px;
+}
+.qty{
+    background: #ff9600;
+    padding: 10px;
+    
+}
+.qty table{
+    width: 320px
+    
+}
+.delivery-button{
+    padding: 10px 30px;
+    width: 160px
+}
+.bottom-hr{
+    border-bottom: 1px solid #fff;
+}
+/***************About Page***************/
 
 
-
-
-
-
-
+.about{
+    margin-top: 60px;
+}
+.reviews{
+    background: #ff9600;
+    padding: 20px 10px;
+}
+.refund{
+    background: #ff9600;
+    padding: 20px 10px;
+}
 
 
 
@@ -210,7 +343,7 @@ a.btn-order:hover{
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .logo {
     position: unset!important;
     z-index: unset!important;
@@ -225,42 +358,3 @@ a.btn-order:hover{
     right: 85px!important;
     }
 }
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-    .logo {
-    position: unset!important;
-    z-index: unset!important;
-    margin-left: 0!important;
-    }
-    .right-address {
-    top: 0px!important;
-    right: 0!important;
-    width: 100%!important;
-    }
-    .open-status {
-    right: 85px!important;
-    }
-}
-}
-
-// Large devices (desktops, 992px and up)
-@media (max-width: 992px) { 
-    .logo {
-    position: unset!important;
-    z-index: unset!important;
-    margin-left: 0!important;
-    }
-    .right-address {
-    top: 0px!important;
-    right: 0!important;
-    width: 100%!important;
-    }
-    .open-status {
-    right: 85px!important;
-    }
-}
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) { ... }
